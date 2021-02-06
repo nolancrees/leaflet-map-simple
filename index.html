@@ -27,20 +27,20 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [41.77, -72.69], // EDIT coordinates to re-center map
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    center: [42.99448, -96.48893], // EDIT coordinates to re-center map
+    zoom: 16,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false,
     tap: false
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT coordinates to re-position marker
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  L.marker([42.99448, -96.48893]).addTo(map) // EDIT coordinates to re-position marker
+  .bindPopup("The location where CNWrr and The Milwaukee Road crossed eachother"); // EDIT pop-up text message
 
   </script>
 </body>
